@@ -4,7 +4,7 @@ const Todo = ({ task, key, remove, i }) =>
 <li
     key={i}
     id={i} 
-    className="list-group-item d-flex justify-content-between p-3"
+    className="list-group-item d-flex justify-content-between p-3 lead"
     style={{wordBreak: 'break-all', textOverflow: 'hidden'}}
 >
     { task }

@@ -23,10 +23,11 @@ export default class NewTodo extends Component {
         return(
             <div className=''>
                 <form onSubmit={ this.handleAdd }>
-                    <div className='input-group mb-3'>
+                    <div className='input-group mb-3 '>
+                    
                         <input className='form-control' autoComplete='off' type='text' name='task' id='task' onChange={ this.handleChange } value={ this.props.view } />
-                        <div className='input-group-prepend'>
-                            <button  className='btn btn-warning text-white'>Save</button>
+                        <div className='input-group-append'>
+                            <button  className='btn btn-secondary text-white'>Save</button>
                         </div>
                     </div>
                 </form>

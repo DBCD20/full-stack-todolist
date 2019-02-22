@@ -33,7 +33,15 @@ addTask(){
     alert('Please insert valid task')
 }
 handleRemove(id){
-    this.props.removeTodo(id)
+    let verify = window.confirm('Are you sure you want to delete this task?');
+    if(verify){
+        this.props.removeTodo(id)
+        return
+    } else {
+        return
+    }
+
+    
 }
 
     render(){
