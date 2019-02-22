@@ -1,7 +1,6 @@
 import Todo from './Todo';
 import NewTodo from './newTodo';
 import React, { Component }     from 'react';
-import { Route }                from 'react-router-dom';
 import { addTodo, removeTodo, getTodos }  from './actionCreators';
 import { connect }              from 'react-redux';
 
